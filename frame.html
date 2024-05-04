@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        *{
+            font-family: 'JetBrains Mono','Courier new','Consolas';
+        }
+
+        label, input{
+            font-size: larger;
+        }
+
+        select,option{
+            font-size: larger;
+            width: 292px;
+        }
+
+        #label1{
+            padding-right: 58px;
+            color: white;
+        }
+        #label2{
+            padding-right: 58px;
+            color: white;
+        }
+        body{
+            background-color: #1a12b0;
+        }
+        #submit-btn{
+            background-color: rgb(30, 30, 255);
+            color: white;
+            border-radius: 3px;
+            font-size: larger;
+            border: none;
+            transition: 500ms;
+            border: 1px solid black;
+        }
+        #submit-btn:hover{
+            background-color: rgb(68, 68, 255);
+        }
+
+        #submit-btn:active{
+            background-color: rgb(30, 30, 255);
+        }
+        #out{
+            color: white;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <label id="label1">Enter num1: </label>
+    <input type="number" id="num1"><br> 
+    <label id="label2">Enter num2: </label>
+    <input type="number" id="num2"><br>
+    <label style="color: white;">Select operator: </label>   
+    <select id="oper">
+        <option value="add">Add</option>
+        <option value="subtract">Subtract</option>
+        <option value="multiply">Multiply</option>
+        <option value="divide">Divide</option>
+    </select><br>
+    <button id="submit-btn">Get answer</button><br>
+    <p id="out"></p>
+    <script src="script.js"></script>
+</body>
+</html>
